@@ -10,18 +10,18 @@
   margin-top: 3rem;
 }
 
-#button1, #button2, p {
+.button, p {
   color: #FFF;
   width: 3rem;
   height: 3rem;
   font-size: 1.2rem;
 }
 
-#button1 {
+#button1, #button3 {
   background-color: red;
 }
 
-#button2 {
+#button2, #button4 {
   background-color: orange;
 }
 
