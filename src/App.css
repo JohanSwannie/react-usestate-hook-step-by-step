@@ -29,3 +29,12 @@ p {
   background-color: blue;
   line-height: 2.5;
 }
+
+h4 {
+  color: #FFF;
+  background-color: red;
+  width: 8rem;
+  height: 3rem;
+  text-align: center;
+  line-height: 3;
+}
