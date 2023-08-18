@@ -19,9 +19,14 @@ function App() {
 
   // The following example illustrate how to use useState with objects
 
-  const [state, setState] = useState({ amount3: 999, color: "red" });
+  const [state, setState] = useState({
+    amount3: 999,
+    color: "purple",
+    backgroundColor: "yellow",
+  });
   const amount3 = state.amount3;
   const color = state.color;
+  const backgroundColor = state.backgroundColor;
 
   // We use prevCount instead of count below, because if we should repeat setAmount(count - 1) more
   // than once it will only subtract 1 from count. By using prevCount the update will take place,
@@ -42,6 +47,8 @@ function App() {
   // it is not getting merge in the object automatically
 
   const handleDecrementation2 = () => {
+    document.getElementById("h4").style.color = color;
+    document.getElementById("h4").style.backgroundColor = backgroundColor;
     setState((prevState) => {
       return { ...prevState, amount3: prevState.amount3 - 1 };
     });
@@ -70,7 +77,7 @@ function App() {
         <button id="button3" className="button" onClick={handleDecrementation2}>
           -
         </button>
-        <p>{amount3}</p>
+        <h4 id="h4">{amount3}</h4>
         <button id="button4" className="button" onClick={handleIncrementation2}>
           +
         </button>
