@@ -59,13 +59,13 @@ function App() {
 
   const handleDecrementation2 = () => {
     setState((prevState) => {
-      return { ...prevState, amount3: prevState.amount3 - 1 };
+      return { ...prevState, amount3: prevState.amount3 - 10 };
     });
   };
 
   const handleIncrementation2 = () => {
     setState((prevState) => {
-      return { ...prevState, amount3: prevState.amount3 + 1 };
+      return { ...prevState, amount3: prevState.amount3 + 20 };
     });
   };
 
